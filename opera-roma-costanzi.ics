@@ -6,18 +6,64 @@ X-WR-CALNAME:Opera di Roma – Teatro Costanzi (Opera only)
 X-WR-TIMEZONE:Europe/Rome
 BEGIN:VEVENT
 SUMMARY:The Rake’s Progress
+DTSTART;TZID=Europe/Rome:20261127T190000
+DTEND;TZID=Europe/Rome:20261127T220000
+DTSTAMP:20261111T224338Z
+UID:fe2be4c7ff28044436671c61@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – The Rake’s Progress\n\nDirig
+ ent: Michele Mariotti\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der 
+ offiziellen Produktionsseite prüfen\; Alternativbesetzungen können je Au
+ fführung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer
+  prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli/the-rakes-progres
+ s-la-carriera-di-un-libertino/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/the-rakes-progress-la-carriera-di-
+ un-libertino/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Rake’s Progress
 DTSTART;TZID=Europe/Rome:20261129T163000
 DTEND;TZID=Europe/Rome:20261129T193000
-DTSTAMP:20261111T223438Z
+DTSTAMP:20261111T224338Z
 UID:4054af24198ee924bf96cd45@opera-roma-calendar
 DESCRIPTION:Teatro dell’Opera di Roma – The Rake’s Progress\n\nDirig
- ent: Scuola di Canto Corale\n\nBesetzung (Angaben der Produktion\; einzeln
- e Termine können abweichen):\nTrulove\nSimone Alberghini\nAnne\, sua figl
- ia\nRosalia Cid\nTom Rakewell\nLawrence Brownlee\nNick Shadow\nAlex Esposi
- to\nMother Goose\nJennifer Larmore\nBaba la turca\nDaniela Barcellona\n\nE
- ndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.\n\nQuelle: http
- s://www.operaroma.it/spettacoli/the-rakes-progress-la-carriera-di-un-liber
- tino/
+ ent: Michele Mariotti\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der 
+ offiziellen Produktionsseite prüfen\; Alternativbesetzungen können je Au
+ fführung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer
+  prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli/the-rakes-progres
+ s-la-carriera-di-un-libertino/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/the-rakes-progress-la-carriera-di-
+ un-libertino/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Rake’s Progress
+DTSTART;TZID=Europe/Rome:20261201T200000
+DTEND;TZID=Europe/Rome:20261201T230000
+DTSTAMP:20261111T224338Z
+UID:57e71345294f2977a3eb907b@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – The Rake’s Progress\n\nDirig
+ ent: Michele Mariotti\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der 
+ offiziellen Produktionsseite prüfen\; Alternativbesetzungen können je Au
+ fführung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer
+  prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli/the-rakes-progres
+ s-la-carriera-di-un-libertino/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/the-rakes-progress-la-carriera-di-
+ un-libertino/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Rake’s Progress
+DTSTART;TZID=Europe/Rome:20261203T200000
+DTEND;TZID=Europe/Rome:20261203T230000
+DTSTAMP:20261111T224338Z
+UID:2dc48cee2be459455ada60e7@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – The Rake’s Progress\n\nDirig
+ ent: Michele Mariotti\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der 
+ offiziellen Produktionsseite prüfen\; Alternativbesetzungen können je Au
+ fführung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer
+  prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli/the-rakes-progres
+ s-la-carriera-di-un-libertino/
 LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
 URL:https://www.operaroma.it/spettacoli/the-rakes-progress-la-carriera-di-
  un-libertino/
@@ -26,65 +72,113 @@ BEGIN:VEVENT
 SUMMARY:The Rake’s Progress
 DTSTART;TZID=Europe/Rome:20261205T180000
 DTEND;TZID=Europe/Rome:20261205T210000
-DTSTAMP:20261111T223438Z
+DTSTAMP:20261111T224338Z
 UID:978e87d54b9c42c5bb77fe3a@opera-roma-calendar
 DESCRIPTION:Teatro dell’Opera di Roma – The Rake’s Progress\n\nDirig
- ent: Scuola di Canto Corale\n\nBesetzung (Angaben der Produktion\; einzeln
- e Termine können abweichen):\nTrulove\nSimone Alberghini\nAnne\, sua figl
- ia\nRosalia Cid\nTom Rakewell\nLawrence Brownlee\nNick Shadow\nAlex Esposi
- to\nMother Goose\nJennifer Larmore\nBaba la turca\nDaniela Barcellona\n\nE
- ndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.\n\nQuelle: http
- s://www.operaroma.it/spettacoli/the-rakes-progress-la-carriera-di-un-liber
- tino/
+ ent: Michele Mariotti\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der 
+ offiziellen Produktionsseite prüfen\; Alternativbesetzungen können je Au
+ fführung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer
+  prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli/the-rakes-progres
+ s-la-carriera-di-un-libertino/
 LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
 URL:https://www.operaroma.it/spettacoli/the-rakes-progress-la-carriera-di-
  un-libertino/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Andrea ChÃ©nier
+SUMMARY:Andrea Chénier
 DTSTART;TZID=Europe/Rome:20270117T190000
 DTEND;TZID=Europe/Rome:20270117T220000
-DTSTAMP:20261111T223438Z
-UID:6fb083fdabb04ec69f7b0e0d@opera-roma-calendar
-DESCRIPTION:Teatro dell’Opera di Roma – Andrea ChÃ©nier\n\nDirigent:
-  Scuola di Canto Corale\n\nBesetzung (Angaben der Produktion\; einzelne Te
- rmine können abweichen):\nAndrea ChÃ©nier\nIvan Gyngazov\nÂ 17\, 23\, 
- 26 /\nMartin Muehle\n19\, 21 /Â\nGregory Kunde\n20\, 24\nCarlo GÃ©rard
- \nLudovic TÃ©zier\nAriunbatar Ganbataar\n19\, 21\, 24\nMaddalena di Coig
- ny\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.\n\nQuell
- e: https://www.operaroma.it/spettacoli/andrea-chenier-3/
+DTSTAMP:20261111T224338Z
+UID:f8ee6fc7d485bdf33aa00b5f@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Andrea Chénier\n\nDirigent: D
+ aniel Oren\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offiziellen
+  Produktionsseite prüfen\; Alternativbesetzungen können je Aufführung v
+ ariieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.\n
+ \nQuelle: https://www.operaroma.it/spettacoli/andrea-chenier-3/
 LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
 URL:https://www.operaroma.it/spettacoli/andrea-chenier-3/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Andrea ChÃ©nier
+SUMMARY:Andrea Chénier
+DTSTART;TZID=Europe/Rome:20270119T200000
+DTEND;TZID=Europe/Rome:20270119T230000
+DTSTAMP:20261111T224338Z
+UID:bc13f9cd3279ded0e0929b38@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Andrea Chénier\n\nDirigent: D
+ aniel Oren\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offiziellen
+  Produktionsseite prüfen\; Alternativbesetzungen können je Aufführung v
+ ariieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.\n
+ \nQuelle: https://www.operaroma.it/spettacoli/andrea-chenier-3/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/andrea-chenier-3/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Andrea Chénier
+DTSTART;TZID=Europe/Rome:20270120T200000
+DTEND;TZID=Europe/Rome:20270120T230000
+DTSTAMP:20261111T224338Z
+UID:224dba409366e167d36c1ba7@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Andrea Chénier\n\nDirigent: D
+ aniel Oren\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offiziellen
+  Produktionsseite prüfen\; Alternativbesetzungen können je Aufführung v
+ ariieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.\n
+ \nQuelle: https://www.operaroma.it/spettacoli/andrea-chenier-3/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/andrea-chenier-3/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Andrea Chénier
+DTSTART;TZID=Europe/Rome:20270121T200000
+DTEND;TZID=Europe/Rome:20270121T230000
+DTSTAMP:20261111T224338Z
+UID:f1aa09c6a79501f14ced0e6d@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Andrea Chénier\n\nDirigent: D
+ aniel Oren\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offiziellen
+  Produktionsseite prüfen\; Alternativbesetzungen können je Aufführung v
+ ariieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.\n
+ \nQuelle: https://www.operaroma.it/spettacoli/andrea-chenier-3/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/andrea-chenier-3/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Andrea Chénier
 DTSTART;TZID=Europe/Rome:20270123T180000
 DTEND;TZID=Europe/Rome:20270123T210000
-DTSTAMP:20261111T223438Z
-UID:2ed74ce99f1850522bfbfa6d@opera-roma-calendar
-DESCRIPTION:Teatro dell’Opera di Roma – Andrea ChÃ©nier\n\nDirigent:
-  Scuola di Canto Corale\n\nBesetzung (Angaben der Produktion\; einzelne Te
- rmine können abweichen):\nAndrea ChÃ©nier\nIvan Gyngazov\nÂ 17\, 23\, 
- 26 /\nMartin Muehle\n19\, 21 /Â\nGregory Kunde\n20\, 24\nCarlo GÃ©rard
- \nLudovic TÃ©zier\nAriunbatar Ganbataar\n19\, 21\, 24\nMaddalena di Coig
- ny\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.\n\nQuell
- e: https://www.operaroma.it/spettacoli/andrea-chenier-3/
+DTSTAMP:20261111T224338Z
+UID:b653d09619458849efb00d2f@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Andrea Chénier\n\nDirigent: D
+ aniel Oren\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offiziellen
+  Produktionsseite prüfen\; Alternativbesetzungen können je Aufführung v
+ ariieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.\n
+ \nQuelle: https://www.operaroma.it/spettacoli/andrea-chenier-3/
 LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
 URL:https://www.operaroma.it/spettacoli/andrea-chenier-3/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Andrea ChÃ©nier
+SUMMARY:Andrea Chénier
 DTSTART;TZID=Europe/Rome:20270124T163000
 DTEND;TZID=Europe/Rome:20270124T193000
-DTSTAMP:20261111T223438Z
-UID:7b5b35afa57cb165528e47da@opera-roma-calendar
-DESCRIPTION:Teatro dell’Opera di Roma – Andrea ChÃ©nier\n\nDirigent:
-  Scuola di Canto Corale\n\nBesetzung (Angaben der Produktion\; einzelne Te
- rmine können abweichen):\nAndrea ChÃ©nier\nIvan Gyngazov\nÂ 17\, 23\, 
- 26 /\nMartin Muehle\n19\, 21 /Â\nGregory Kunde\n20\, 24\nCarlo GÃ©rard
- \nLudovic TÃ©zier\nAriunbatar Ganbataar\n19\, 21\, 24\nMaddalena di Coig
- ny\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.\n\nQuell
- e: https://www.operaroma.it/spettacoli/andrea-chenier-3/
+DTSTAMP:20261111T224338Z
+UID:aec258a18e9f701920a494c7@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Andrea Chénier\n\nDirigent: D
+ aniel Oren\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offiziellen
+  Produktionsseite prüfen\; Alternativbesetzungen können je Aufführung v
+ ariieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.\n
+ \nQuelle: https://www.operaroma.it/spettacoli/andrea-chenier-3/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/andrea-chenier-3/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Andrea Chénier
+DTSTART;TZID=Europe/Rome:20270126T200000
+DTEND;TZID=Europe/Rome:20270126T230000
+DTSTAMP:20261111T224338Z
+UID:25d2eb90fabd653071e93989@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Andrea Chénier\n\nDirigent: D
+ aniel Oren\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offiziellen
+  Produktionsseite prüfen\; Alternativbesetzungen können je Aufführung v
+ ariieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.\n
+ \nQuelle: https://www.operaroma.it/spettacoli/andrea-chenier-3/
 LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
 URL:https://www.operaroma.it/spettacoli/andrea-chenier-3/
 END:VEVENT
@@ -92,15 +186,74 @@ BEGIN:VEVENT
 SUMMARY:Lucia di Lammermoor
 DTSTART;TZID=Europe/Rome:20270221T190000
 DTEND;TZID=Europe/Rome:20270221T220000
-DTSTAMP:20261111T223438Z
+DTSTAMP:20261111T224338Z
 UID:cfe1ca084c7b6a9cf1c5aa8e@opera-roma-calendar
 DESCRIPTION:Teatro dell’Opera di Roma – Lucia di Lammermoor\n\nDirigen
- t: Scuola di Canto Corale\n\nBesetzung (Angaben der Produktion\; einzelne 
- Termine können abweichen):\nLord Enrico Ashton\nGermÃ¡n Enrique AlcÃ¡
- ntara\nBogdan Baciu\n23\, 25\, 27\nMiss Lucia\nJessica Pratt\nGilda Fiume
- \n23\, 25\, 27\nSir Edgardo di Ravenswood\nXabier Anduaga\nRenÃ© Barbera
- \n23\, 25\, 27\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüf
- en.\n\nQuelle: https://www.operaroma.it/spettacoli/lucia-di-lammermoor-2/
+ t: Giacomo Sagripanti\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der 
+ offiziellen Produktionsseite prüfen\; Alternativbesetzungen können je Au
+ fführung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer
+  prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli/lucia-di-lammermo
+ or-2/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/lucia-di-lammermoor-2/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Lucia di Lammermoor
+DTSTART;TZID=Europe/Rome:20270223T200000
+DTEND;TZID=Europe/Rome:20270223T230000
+DTSTAMP:20261111T224338Z
+UID:7eec4b95a1a15bbcc8b2693c@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Lucia di Lammermoor\n\nDirigen
+ t: Giacomo Sagripanti\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der 
+ offiziellen Produktionsseite prüfen\; Alternativbesetzungen können je Au
+ fführung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer
+  prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli/lucia-di-lammermo
+ or-2/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/lucia-di-lammermoor-2/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Lucia di Lammermoor
+DTSTART;TZID=Europe/Rome:20270224T200000
+DTEND;TZID=Europe/Rome:20270224T230000
+DTSTAMP:20261111T224338Z
+UID:6d2364e3870ed9cbadaf14eb@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Lucia di Lammermoor\n\nDirigen
+ t: Giacomo Sagripanti\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der 
+ offiziellen Produktionsseite prüfen\; Alternativbesetzungen können je Au
+ fführung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer
+  prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli/lucia-di-lammermo
+ or-2/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/lucia-di-lammermoor-2/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Lucia di Lammermoor
+DTSTART;TZID=Europe/Rome:20270225T200000
+DTEND;TZID=Europe/Rome:20270225T230000
+DTSTAMP:20261111T224338Z
+UID:ce73020ad7d77cd05d134dae@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Lucia di Lammermoor\n\nDirigen
+ t: Giacomo Sagripanti\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der 
+ offiziellen Produktionsseite prüfen\; Alternativbesetzungen können je Au
+ fführung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer
+  prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli/lucia-di-lammermo
+ or-2/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/lucia-di-lammermoor-2/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Lucia di Lammermoor
+DTSTART;TZID=Europe/Rome:20270226T200000
+DTEND;TZID=Europe/Rome:20270226T230000
+DTSTAMP:20261111T224338Z
+UID:adeadab447e3058b510a8a03@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Lucia di Lammermoor\n\nDirigen
+ t: Giacomo Sagripanti\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der 
+ offiziellen Produktionsseite prüfen\; Alternativbesetzungen können je Au
+ fführung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer
+  prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli/lucia-di-lammermo
+ or-2/
 LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
 URL:https://www.operaroma.it/spettacoli/lucia-di-lammermoor-2/
 END:VEVENT
@@ -108,15 +261,14 @@ BEGIN:VEVENT
 SUMMARY:Lucia di Lammermoor
 DTSTART;TZID=Europe/Rome:20270227T180000
 DTEND;TZID=Europe/Rome:20270227T210000
-DTSTAMP:20261111T223438Z
+DTSTAMP:20261111T224338Z
 UID:adde80ddbeb1653869311afd@opera-roma-calendar
 DESCRIPTION:Teatro dell’Opera di Roma – Lucia di Lammermoor\n\nDirigen
- t: Scuola di Canto Corale\n\nBesetzung (Angaben der Produktion\; einzelne 
- Termine können abweichen):\nLord Enrico Ashton\nGermÃ¡n Enrique AlcÃ¡
- ntara\nBogdan Baciu\n23\, 25\, 27\nMiss Lucia\nJessica Pratt\nGilda Fiume
- \n23\, 25\, 27\nSir Edgardo di Ravenswood\nXabier Anduaga\nRenÃ© Barbera
- \n23\, 25\, 27\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüf
- en.\n\nQuelle: https://www.operaroma.it/spettacoli/lucia-di-lammermoor-2/
+ t: Giacomo Sagripanti\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der 
+ offiziellen Produktionsseite prüfen\; Alternativbesetzungen können je Au
+ fführung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer
+  prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli/lucia-di-lammermo
+ or-2/
 LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
 URL:https://www.operaroma.it/spettacoli/lucia-di-lammermoor-2/
 END:VEVENT
@@ -124,15 +276,14 @@ BEGIN:VEVENT
 SUMMARY:Lucia di Lammermoor
 DTSTART;TZID=Europe/Rome:20270228T163000
 DTEND;TZID=Europe/Rome:20270228T193000
-DTSTAMP:20261111T223438Z
+DTSTAMP:20261111T224338Z
 UID:5dcb768d9466d58bb6c274c2@opera-roma-calendar
 DESCRIPTION:Teatro dell’Opera di Roma – Lucia di Lammermoor\n\nDirigen
- t: Scuola di Canto Corale\n\nBesetzung (Angaben der Produktion\; einzelne 
- Termine können abweichen):\nLord Enrico Ashton\nGermÃ¡n Enrique AlcÃ¡
- ntara\nBogdan Baciu\n23\, 25\, 27\nMiss Lucia\nJessica Pratt\nGilda Fiume
- \n23\, 25\, 27\nSir Edgardo di Ravenswood\nXabier Anduaga\nRenÃ© Barbera
- \n23\, 25\, 27\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüf
- en.\n\nQuelle: https://www.operaroma.it/spettacoli/lucia-di-lammermoor-2/
+ t: Giacomo Sagripanti\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der 
+ offiziellen Produktionsseite prüfen\; Alternativbesetzungen können je Au
+ fführung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer
+  prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli/lucia-di-lammermo
+ or-2/
 LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
 URL:https://www.operaroma.it/spettacoli/lucia-di-lammermoor-2/
 END:VEVENT
@@ -140,15 +291,13 @@ BEGIN:VEVENT
 SUMMARY:I due Foscari
 DTSTART;TZID=Europe/Rome:20270313T200000
 DTEND;TZID=Europe/Rome:20270313T230000
-DTSTAMP:20261111T223438Z
+DTSTAMP:20261111T224338Z
 UID:17145ecd8932711a7512de55@opera-roma-calendar
-DESCRIPTION:Teatro dell’Opera di Roma – I due Foscari\n\nDirigent: Scu
- ola di Canto Corale\n\nBesetzung (Angaben der Produktion\; einzelne Termin
- e können abweichen):\nFrancesco Foscari\nNicola Alaimo\nLucas Meachem\n14
- \, 17\, 20\nJacopo Foscari\nKang Wang\nGiorgio Berrugi\n14\, 17\, 20\nLucr
- ezia Contarini\nMarta Torbidoni\nMarigona Qerkezi\n14\, 17\, 20\n\nEndzeit
-  geschätzt (+3 h)\; bitte offizielle Dauer prüfen.\n\nQuelle: https://ww
- w.operaroma.it/spettacoli/i-due-foscari/
+DESCRIPTION:Teatro dell’Opera di Roma – I due Foscari\n\nDirigent: Ric
+ cardo Frizza\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offiziell
+ en Produktionsseite prüfen\; Alternativbesetzungen können je Aufführung
+  variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.
+ \n\nQuelle: https://www.operaroma.it/spettacoli/i-due-foscari/
 LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
 URL:https://www.operaroma.it/spettacoli/i-due-foscari/
 END:VEVENT
@@ -156,15 +305,55 @@ BEGIN:VEVENT
 SUMMARY:I due Foscari
 DTSTART;TZID=Europe/Rome:20270314T163000
 DTEND;TZID=Europe/Rome:20270314T193000
-DTSTAMP:20261111T223438Z
+DTSTAMP:20261111T224338Z
 UID:c077aa7c99a92f148c17bcf2@opera-roma-calendar
-DESCRIPTION:Teatro dell’Opera di Roma – I due Foscari\n\nDirigent: Scu
- ola di Canto Corale\n\nBesetzung (Angaben der Produktion\; einzelne Termin
- e können abweichen):\nFrancesco Foscari\nNicola Alaimo\nLucas Meachem\n14
- \, 17\, 20\nJacopo Foscari\nKang Wang\nGiorgio Berrugi\n14\, 17\, 20\nLucr
- ezia Contarini\nMarta Torbidoni\nMarigona Qerkezi\n14\, 17\, 20\n\nEndzeit
-  geschätzt (+3 h)\; bitte offizielle Dauer prüfen.\n\nQuelle: https://ww
- w.operaroma.it/spettacoli/i-due-foscari/
+DESCRIPTION:Teatro dell’Opera di Roma – I due Foscari\n\nDirigent: Ric
+ cardo Frizza\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offiziell
+ en Produktionsseite prüfen\; Alternativbesetzungen können je Aufführung
+  variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.
+ \n\nQuelle: https://www.operaroma.it/spettacoli/i-due-foscari/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/i-due-foscari/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:I due Foscari
+DTSTART;TZID=Europe/Rome:20270316T200000
+DTEND;TZID=Europe/Rome:20270316T230000
+DTSTAMP:20261111T224338Z
+UID:1adb103c15b1b1981b23001a@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – I due Foscari\n\nDirigent: Ric
+ cardo Frizza\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offiziell
+ en Produktionsseite prüfen\; Alternativbesetzungen können je Aufführung
+  variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.
+ \n\nQuelle: https://www.operaroma.it/spettacoli/i-due-foscari/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/i-due-foscari/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:I due Foscari
+DTSTART;TZID=Europe/Rome:20270317T200000
+DTEND;TZID=Europe/Rome:20270317T230000
+DTSTAMP:20261111T224338Z
+UID:69e4dbe583d76c23c02c2d7a@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – I due Foscari\n\nDirigent: Ric
+ cardo Frizza\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offiziell
+ en Produktionsseite prüfen\; Alternativbesetzungen können je Aufführung
+  variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.
+ \n\nQuelle: https://www.operaroma.it/spettacoli/i-due-foscari/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/i-due-foscari/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:I due Foscari
+DTSTART;TZID=Europe/Rome:20270319T200000
+DTEND;TZID=Europe/Rome:20270319T230000
+DTSTAMP:20261111T224338Z
+UID:8af47e254017ff6cbaf0ce06@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – I due Foscari\n\nDirigent: Ric
+ cardo Frizza\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offiziell
+ en Produktionsseite prüfen\; Alternativbesetzungen können je Aufführung
+  variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.
+ \n\nQuelle: https://www.operaroma.it/spettacoli/i-due-foscari/
 LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
 URL:https://www.operaroma.it/spettacoli/i-due-foscari/
 END:VEVENT
@@ -172,15 +361,13 @@ BEGIN:VEVENT
 SUMMARY:I due Foscari
 DTSTART;TZID=Europe/Rome:20270320T180000
 DTEND;TZID=Europe/Rome:20270320T210000
-DTSTAMP:20261111T223438Z
+DTSTAMP:20261111T224338Z
 UID:485aa2c0153d3e905253d676@opera-roma-calendar
-DESCRIPTION:Teatro dell’Opera di Roma – I due Foscari\n\nDirigent: Scu
- ola di Canto Corale\n\nBesetzung (Angaben der Produktion\; einzelne Termin
- e können abweichen):\nFrancesco Foscari\nNicola Alaimo\nLucas Meachem\n14
- \, 17\, 20\nJacopo Foscari\nKang Wang\nGiorgio Berrugi\n14\, 17\, 20\nLucr
- ezia Contarini\nMarta Torbidoni\nMarigona Qerkezi\n14\, 17\, 20\n\nEndzeit
-  geschätzt (+3 h)\; bitte offizielle Dauer prüfen.\n\nQuelle: https://ww
- w.operaroma.it/spettacoli/i-due-foscari/
+DESCRIPTION:Teatro dell’Opera di Roma – I due Foscari\n\nDirigent: Ric
+ cardo Frizza\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offiziell
+ en Produktionsseite prüfen\; Alternativbesetzungen können je Aufführung
+  variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.
+ \n\nQuelle: https://www.operaroma.it/spettacoli/i-due-foscari/
 LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
 URL:https://www.operaroma.it/spettacoli/i-due-foscari/
 END:VEVENT
@@ -188,62 +375,151 @@ BEGIN:VEVENT
 SUMMARY:I due Foscari
 DTSTART;TZID=Europe/Rome:20270321T163000
 DTEND;TZID=Europe/Rome:20270321T193000
-DTSTAMP:20261111T223438Z
+DTSTAMP:20261111T224338Z
 UID:f2edede44b3e361384e2a61c@opera-roma-calendar
-DESCRIPTION:Teatro dell’Opera di Roma – I due Foscari\n\nDirigent: Scu
- ola di Canto Corale\n\nBesetzung (Angaben der Produktion\; einzelne Termin
- e können abweichen):\nFrancesco Foscari\nNicola Alaimo\nLucas Meachem\n14
- \, 17\, 20\nJacopo Foscari\nKang Wang\nGiorgio Berrugi\n14\, 17\, 20\nLucr
- ezia Contarini\nMarta Torbidoni\nMarigona Qerkezi\n14\, 17\, 20\n\nEndzeit
-  geschätzt (+3 h)\; bitte offizielle Dauer prüfen.\n\nQuelle: https://ww
- w.operaroma.it/spettacoli/i-due-foscari/
+DESCRIPTION:Teatro dell’Opera di Roma – I due Foscari\n\nDirigent: Ric
+ cardo Frizza\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offiziell
+ en Produktionsseite prüfen\; Alternativbesetzungen können je Aufführung
+  variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.
+ \n\nQuelle: https://www.operaroma.it/spettacoli/i-due-foscari/
 LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
 URL:https://www.operaroma.it/spettacoli/i-due-foscari/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:IphigÃ©nie en Tauride
+SUMMARY:Iphigénie en Tauride
 DTSTART;TZID=Europe/Rome:20270418T190000
 DTEND;TZID=Europe/Rome:20270418T220000
-DTSTAMP:20261111T223438Z
-UID:df5f93957b22b03b02aa8b7f@opera-roma-calendar
-DESCRIPTION:Teatro dell’Opera di Roma – IphigÃ©nie en Tauride\n\nDir
- igent: Scuola di Canto Corale\n\nBesetzung (Angaben der Produktion\; einze
- lne Termine können abweichen):\nIphigÃ©nie\nAxelle Fanyo\nOreste\nAless
- io Arduini\nPylade\nJulien Behr\nThoas\nJean-Fernand Setti\n\nEndzeit gesc
- hätzt (+3 h)\; bitte offizielle Dauer prüfen.\n\nQuelle: https://www.ope
- raroma.it/spettacoli/iphigenie-en-tauride/
+DTSTAMP:20261111T224338Z
+UID:120e8ca8e1c78f0b8196f65c@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Iphigénie en Tauride\n\nDirig
+ ent: Alessandro De Marchi\n\nBesetzung: Bitte tagesaktuelle Besetzung auf 
+ der offiziellen Produktionsseite prüfen\; Alternativbesetzungen können j
+ e Aufführung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle D
+ auer prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli/iphigenie-en-
+ tauride/
 LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
 URL:https://www.operaroma.it/spettacoli/iphigenie-en-tauride/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:IphigÃ©nie en Tauride
+SUMMARY:Iphigénie en Tauride
+DTSTART;TZID=Europe/Rome:20270420T200000
+DTEND;TZID=Europe/Rome:20270420T230000
+DTSTAMP:20261111T224338Z
+UID:893ec9ba551c8926046da5da@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Iphigénie en Tauride\n\nDirig
+ ent: Alessandro De Marchi\n\nBesetzung: Bitte tagesaktuelle Besetzung auf 
+ der offiziellen Produktionsseite prüfen\; Alternativbesetzungen können j
+ e Aufführung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle D
+ auer prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli/iphigenie-en-
+ tauride/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/iphigenie-en-tauride/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Iphigénie en Tauride
+DTSTART;TZID=Europe/Rome:20270422T180000
+DTEND;TZID=Europe/Rome:20270422T210000
+DTSTAMP:20261111T224338Z
+UID:e5e18af3617ea0fc41603cad@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Iphigénie en Tauride\n\nDirig
+ ent: Alessandro De Marchi\n\nBesetzung: Bitte tagesaktuelle Besetzung auf 
+ der offiziellen Produktionsseite prüfen\; Alternativbesetzungen können j
+ e Aufführung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle D
+ auer prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli/iphigenie-en-
+ tauride/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/iphigenie-en-tauride/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Iphigénie en Tauride
 DTSTART;TZID=Europe/Rome:20270424T163000
 DTEND;TZID=Europe/Rome:20270424T193000
-DTSTAMP:20261111T223438Z
-UID:2cbf2fde017c381d6fdaf195@opera-roma-calendar
-DESCRIPTION:Teatro dell’Opera di Roma – IphigÃ©nie en Tauride\n\nDir
- igent: Scuola di Canto Corale\n\nBesetzung (Angaben der Produktion\; einze
- lne Termine können abweichen):\nIphigÃ©nie\nAxelle Fanyo\nOreste\nAless
- io Arduini\nPylade\nJulien Behr\nThoas\nJean-Fernand Setti\n\nEndzeit gesc
- hätzt (+3 h)\; bitte offizielle Dauer prüfen.\n\nQuelle: https://www.ope
- raroma.it/spettacoli/iphigenie-en-tauride/
+DTSTAMP:20261111T224338Z
+UID:2f660b546345d7410f913c47@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Iphigénie en Tauride\n\nDirig
+ ent: Alessandro De Marchi\n\nBesetzung: Bitte tagesaktuelle Besetzung auf 
+ der offiziellen Produktionsseite prüfen\; Alternativbesetzungen können j
+ e Aufführung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle D
+ auer prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli/iphigenie-en-
+ tauride/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/iphigenie-en-tauride/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Iphigénie en Tauride
+DTSTART;TZID=Europe/Rome:20270427T200000
+DTEND;TZID=Europe/Rome:20270427T230000
+DTSTAMP:20261111T224338Z
+UID:92f828cdd27049dd8cfe8c5d@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Iphigénie en Tauride\n\nDirig
+ ent: Alessandro De Marchi\n\nBesetzung: Bitte tagesaktuelle Besetzung auf 
+ der offiziellen Produktionsseite prüfen\; Alternativbesetzungen können j
+ e Aufführung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle D
+ auer prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli/iphigenie-en-
+ tauride/
 LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
 URL:https://www.operaroma.it/spettacoli/iphigenie-en-tauride/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Una Lady Macbeth del distretto di Mzensk
+DTSTART;TZID=Europe/Rome:20270514T200000
+DTEND;TZID=Europe/Rome:20270514T230000
+DTSTAMP:20261111T224338Z
+UID:b43b5ff37a76b00a2f511f12@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Una Lady Macbeth del distretto
+  di Mzensk\n\nDirigent: Juraj Valčuha\n\nBesetzung: Bitte tagesaktuelle B
+ esetzung auf der offiziellen Produktionsseite prüfen\; Alternativbesetzun
+ gen können je Aufführung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte
+  offizielle Dauer prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli/
+ una-lady-macbeth-del-distretto-di-mzensk/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/una-lady-macbeth-del-distretto-di-
+ mzensk/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Una Lady Macbeth del distretto di Mzensk
 DTSTART;TZID=Europe/Rome:20270516T163000
 DTEND;TZID=Europe/Rome:20270516T193000
-DTSTAMP:20261111T223438Z
+DTSTAMP:20261111T224338Z
 UID:635cdd4aa054c2a728664cf4@opera-roma-calendar
 DESCRIPTION:Teatro dell’Opera di Roma – Una Lady Macbeth del distretto
-  di Mzensk\n\nDirigent: Scuola di Canto Corale\n\nBesetzung (Angaben der P
- roduktion\; einzelne Termine können abweichen):\nBoris TimofeeviÄ Izma
- ilov\nDmitry Ulyanov\nZinovij BorisoviÄ Izmailov\nYa-Chung Huang\nKater
- ina Lâvovna Izmajlova\nOlesya Golovneva\nSergej\nGiorgi Sturua\nUn co
- ntadino cencioso\nCaspar Krieger\nUn prete\nValery Gilmanov\n\nEndzeit ges
- chätzt (+3 h)\; bitte offizielle Dauer prüfen.\n\nQuelle: https://www.op
- eraroma.it/spettacoli/una-lady-macbeth-del-distretto-di-mzensk/
+  di Mzensk\n\nDirigent: Juraj Valčuha\n\nBesetzung: Bitte tagesaktuelle B
+ esetzung auf der offiziellen Produktionsseite prüfen\; Alternativbesetzun
+ gen können je Aufführung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte
+  offizielle Dauer prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli/
+ una-lady-macbeth-del-distretto-di-mzensk/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/una-lady-macbeth-del-distretto-di-
+ mzensk/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Una Lady Macbeth del distretto di Mzensk
+DTSTART;TZID=Europe/Rome:20270518T200000
+DTEND;TZID=Europe/Rome:20270518T230000
+DTSTAMP:20261111T224338Z
+UID:6be2118f261e810f4795875b@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Una Lady Macbeth del distretto
+  di Mzensk\n\nDirigent: Juraj Valčuha\n\nBesetzung: Bitte tagesaktuelle B
+ esetzung auf der offiziellen Produktionsseite prüfen\; Alternativbesetzun
+ gen können je Aufführung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte
+  offizielle Dauer prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli/
+ una-lady-macbeth-del-distretto-di-mzensk/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/una-lady-macbeth-del-distretto-di-
+ mzensk/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Una Lady Macbeth del distretto di Mzensk
+DTSTART;TZID=Europe/Rome:20270520T200000
+DTEND;TZID=Europe/Rome:20270520T230000
+DTSTAMP:20261111T224338Z
+UID:3e5a5c503147bbcb90961652@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Una Lady Macbeth del distretto
+  di Mzensk\n\nDirigent: Juraj Valčuha\n\nBesetzung: Bitte tagesaktuelle B
+ esetzung auf der offiziellen Produktionsseite prüfen\; Alternativbesetzun
+ gen können je Aufführung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte
+  offizielle Dauer prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli/
+ una-lady-macbeth-del-distretto-di-mzensk/
 LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
 URL:https://www.operaroma.it/spettacoli/una-lady-macbeth-del-distretto-di-
  mzensk/
@@ -252,33 +528,71 @@ BEGIN:VEVENT
 SUMMARY:Una Lady Macbeth del distretto di Mzensk
 DTSTART;TZID=Europe/Rome:20270522T180000
 DTEND;TZID=Europe/Rome:20270522T210000
-DTSTAMP:20261111T223438Z
+DTSTAMP:20261111T224338Z
 UID:b49eea8ced3f8eb02cf15ae7@opera-roma-calendar
 DESCRIPTION:Teatro dell’Opera di Roma – Una Lady Macbeth del distretto
-  di Mzensk\n\nDirigent: Scuola di Canto Corale\n\nBesetzung (Angaben der P
- roduktion\; einzelne Termine können abweichen):\nBoris TimofeeviÄ Izma
- ilov\nDmitry Ulyanov\nZinovij BorisoviÄ Izmailov\nYa-Chung Huang\nKater
- ina Lâvovna Izmajlova\nOlesya Golovneva\nSergej\nGiorgi Sturua\nUn co
- ntadino cencioso\nCaspar Krieger\nUn prete\nValery Gilmanov\n\nEndzeit ges
- chätzt (+3 h)\; bitte offizielle Dauer prüfen.\n\nQuelle: https://www.op
- eraroma.it/spettacoli/una-lady-macbeth-del-distretto-di-mzensk/
+  di Mzensk\n\nDirigent: Juraj Valčuha\n\nBesetzung: Bitte tagesaktuelle B
+ esetzung auf der offiziellen Produktionsseite prüfen\; Alternativbesetzun
+ gen können je Aufführung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte
+  offizielle Dauer prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli/
+ una-lady-macbeth-del-distretto-di-mzensk/
 LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
 URL:https://www.operaroma.it/spettacoli/una-lady-macbeth-del-distretto-di-
  mzensk/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Il trovatore
+DTSTART;TZID=Europe/Rome:20270622T200000
+DTEND;TZID=Europe/Rome:20270622T230000
+DTSTAMP:20261111T224338Z
+UID:fa38ec9b7572c9a1f54d47ea@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Il trovatore\n\nDirigent: Nico
+ la Luisotti\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offizielle
+ n Produktionsseite prüfen\; Alternativbesetzungen können je Aufführung 
+ variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.
+ \n\nQuelle: https://www.operaroma.it/spettacoli/il-trovatore-3/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/il-trovatore-3/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Il trovatore
+DTSTART;TZID=Europe/Rome:20270623T200000
+DTEND;TZID=Europe/Rome:20270623T230000
+DTSTAMP:20261111T224338Z
+UID:4163e7d8b22070033a496430@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Il trovatore\n\nDirigent: Nico
+ la Luisotti\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offizielle
+ n Produktionsseite prüfen\; Alternativbesetzungen können je Aufführung 
+ variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.
+ \n\nQuelle: https://www.operaroma.it/spettacoli/il-trovatore-3/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/il-trovatore-3/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Il trovatore
+DTSTART;TZID=Europe/Rome:20270625T200000
+DTEND;TZID=Europe/Rome:20270625T230000
+DTSTAMP:20261111T224338Z
+UID:e56c5ced1ca99acf72006e02@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Il trovatore\n\nDirigent: Nico
+ la Luisotti\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offizielle
+ n Produktionsseite prüfen\; Alternativbesetzungen können je Aufführung 
+ variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.
+ \n\nQuelle: https://www.operaroma.it/spettacoli/il-trovatore-3/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/il-trovatore-3/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Il trovatore
 DTSTART;TZID=Europe/Rome:20270626T180000
 DTEND;TZID=Europe/Rome:20270626T210000
-DTSTAMP:20261111T223438Z
+DTSTAMP:20261111T224338Z
 UID:555e24f5cfc3ea07cf066a1d@opera-roma-calendar
-DESCRIPTION:Teatro dell’Opera di Roma – Il trovatore\n\nDirigent: Scuo
- la di Canto Corale\n\nBesetzung (Angaben der Produktion\; einzelne Termine
-  können abweichen):\nIl conte di luna\nGeorge Petean\n22\, 25\, 27\, 30\n
- Leonora\nMarina Rebeka\nVasilisa Berzhanskaya\n23\, 26\, 1\nAzucena\nEkate
- rina Semenchuk\nValentina Pernozzoli\n23\, 26\, 1\nManrico\n\nEndzeit gesc
- hätzt (+3 h)\; bitte offizielle Dauer prüfen.\n\nQuelle: https://www.ope
- raroma.it/spettacoli/il-trovatore-3/
+DESCRIPTION:Teatro dell’Opera di Roma – Il trovatore\n\nDirigent: Nico
+ la Luisotti\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offizielle
+ n Produktionsseite prüfen\; Alternativbesetzungen können je Aufführung 
+ variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.
+ \n\nQuelle: https://www.operaroma.it/spettacoli/il-trovatore-3/
 LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
 URL:https://www.operaroma.it/spettacoli/il-trovatore-3/
 END:VEVENT
@@ -286,15 +600,41 @@ BEGIN:VEVENT
 SUMMARY:Il trovatore
 DTSTART;TZID=Europe/Rome:20270627T163000
 DTEND;TZID=Europe/Rome:20270627T193000
-DTSTAMP:20261111T223438Z
+DTSTAMP:20261111T224338Z
 UID:dfcd3a78f9b3108acc72ac83@opera-roma-calendar
-DESCRIPTION:Teatro dell’Opera di Roma – Il trovatore\n\nDirigent: Scuo
- la di Canto Corale\n\nBesetzung (Angaben der Produktion\; einzelne Termine
-  können abweichen):\nIl conte di luna\nGeorge Petean\n22\, 25\, 27\, 30\n
- Leonora\nMarina Rebeka\nVasilisa Berzhanskaya\n23\, 26\, 1\nAzucena\nEkate
- rina Semenchuk\nValentina Pernozzoli\n23\, 26\, 1\nManrico\n\nEndzeit gesc
- hätzt (+3 h)\; bitte offizielle Dauer prüfen.\n\nQuelle: https://www.ope
- raroma.it/spettacoli/il-trovatore-3/
+DESCRIPTION:Teatro dell’Opera di Roma – Il trovatore\n\nDirigent: Nico
+ la Luisotti\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offizielle
+ n Produktionsseite prüfen\; Alternativbesetzungen können je Aufführung 
+ variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.
+ \n\nQuelle: https://www.operaroma.it/spettacoli/il-trovatore-3/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/il-trovatore-3/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Il trovatore
+DTSTART;TZID=Europe/Rome:20270630T200000
+DTEND;TZID=Europe/Rome:20270630T230000
+DTSTAMP:20261111T224338Z
+UID:391c02b4252f120d400b93c8@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Il trovatore\n\nDirigent: Nico
+ la Luisotti\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offizielle
+ n Produktionsseite prüfen\; Alternativbesetzungen können je Aufführung 
+ variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.
+ \n\nQuelle: https://www.operaroma.it/spettacoli/il-trovatore-3/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/il-trovatore-3/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Il trovatore
+DTSTART;TZID=Europe/Rome:20270701T200000
+DTEND;TZID=Europe/Rome:20270701T230000
+DTSTAMP:20261111T224338Z
+UID:4a9f5d79db961a9de46cf94d@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – Il trovatore\n\nDirigent: Nico
+ la Luisotti\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offizielle
+ n Produktionsseite prüfen\; Alternativbesetzungen können je Aufführung 
+ variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüfen.
+ \n\nQuelle: https://www.operaroma.it/spettacoli/il-trovatore-3/
 LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
 URL:https://www.operaroma.it/spettacoli/il-trovatore-3/
 END:VEVENT
@@ -302,15 +642,13 @@ BEGIN:VEVENT
 SUMMARY:La rondine
 DTSTART;TZID=Europe/Rome:20270918T200000
 DTEND;TZID=Europe/Rome:20270918T230000
-DTSTAMP:20261111T223438Z
+DTSTAMP:20261111T224338Z
 UID:df7f4f4cbd673b2d094b87e2@opera-roma-calendar
-DESCRIPTION:Teatro dell’Opera di Roma – La rondine\n\nDirigent: Scuola
-  di Canto Corale\n\nBesetzung (Angaben der Produktion\; einzelne Termine k
- önnen abweichen):\nMagda\nErmonela Jaho\nErika Grimaldi\n19\, 22\nLisette
- \, la sua governante\nRosalia Cid\nRuggero\nFrancesco Meli\nIvan Magri\n19
- \, 22\nPrunier\, poeta\nMatteo Mezzaro\n\nEndzeit geschätzt (+3 h)\; bitt
- e offizielle Dauer prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli
- /la-rondine/
+DESCRIPTION:Teatro dell’Opera di Roma – La rondine\n\nDirigent: France
+ sco Lanzillotta\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offizi
+ ellen Produktionsseite prüfen\; Alternativbesetzungen können je Aufführ
+ ung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüf
+ en.\n\nQuelle: https://www.operaroma.it/spettacoli/la-rondine/
 LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
 URL:https://www.operaroma.it/spettacoli/la-rondine/
 END:VEVENT
@@ -318,15 +656,55 @@ BEGIN:VEVENT
 SUMMARY:La rondine
 DTSTART;TZID=Europe/Rome:20270919T163000
 DTEND;TZID=Europe/Rome:20270919T193000
-DTSTAMP:20261111T223438Z
+DTSTAMP:20261111T224338Z
 UID:962ca92b22bc7220e14a61c2@opera-roma-calendar
-DESCRIPTION:Teatro dell’Opera di Roma – La rondine\n\nDirigent: Scuola
-  di Canto Corale\n\nBesetzung (Angaben der Produktion\; einzelne Termine k
- önnen abweichen):\nMagda\nErmonela Jaho\nErika Grimaldi\n19\, 22\nLisette
- \, la sua governante\nRosalia Cid\nRuggero\nFrancesco Meli\nIvan Magri\n19
- \, 22\nPrunier\, poeta\nMatteo Mezzaro\n\nEndzeit geschätzt (+3 h)\; bitt
- e offizielle Dauer prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli
- /la-rondine/
+DESCRIPTION:Teatro dell’Opera di Roma – La rondine\n\nDirigent: France
+ sco Lanzillotta\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offizi
+ ellen Produktionsseite prüfen\; Alternativbesetzungen können je Aufführ
+ ung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüf
+ en.\n\nQuelle: https://www.operaroma.it/spettacoli/la-rondine/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/la-rondine/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:La rondine
+DTSTART;TZID=Europe/Rome:20270921T200000
+DTEND;TZID=Europe/Rome:20270921T230000
+DTSTAMP:20261111T224338Z
+UID:ee3379ebbe5672e2b775d359@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – La rondine\n\nDirigent: France
+ sco Lanzillotta\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offizi
+ ellen Produktionsseite prüfen\; Alternativbesetzungen können je Aufführ
+ ung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüf
+ en.\n\nQuelle: https://www.operaroma.it/spettacoli/la-rondine/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/la-rondine/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:La rondine
+DTSTART;TZID=Europe/Rome:20270922T200000
+DTEND;TZID=Europe/Rome:20270922T230000
+DTSTAMP:20261111T224338Z
+UID:42c365cb41c91a762c2e87df@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – La rondine\n\nDirigent: France
+ sco Lanzillotta\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offizi
+ ellen Produktionsseite prüfen\; Alternativbesetzungen können je Aufführ
+ ung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüf
+ en.\n\nQuelle: https://www.operaroma.it/spettacoli/la-rondine/
+LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
+URL:https://www.operaroma.it/spettacoli/la-rondine/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:La rondine
+DTSTART;TZID=Europe/Rome:20270924T180000
+DTEND;TZID=Europe/Rome:20270924T210000
+DTSTAMP:20261111T224338Z
+UID:8ff521bef37765607193692b@opera-roma-calendar
+DESCRIPTION:Teatro dell’Opera di Roma – La rondine\n\nDirigent: France
+ sco Lanzillotta\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offizi
+ ellen Produktionsseite prüfen\; Alternativbesetzungen können je Aufführ
+ ung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüf
+ en.\n\nQuelle: https://www.operaroma.it/spettacoli/la-rondine/
 LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
 URL:https://www.operaroma.it/spettacoli/la-rondine/
 END:VEVENT
@@ -334,15 +712,13 @@ BEGIN:VEVENT
 SUMMARY:La rondine
 DTSTART;TZID=Europe/Rome:20270926T163000
 DTEND;TZID=Europe/Rome:20270926T193000
-DTSTAMP:20261111T223438Z
+DTSTAMP:20261111T224338Z
 UID:0839609e0566c0066cc50fe1@opera-roma-calendar
-DESCRIPTION:Teatro dell’Opera di Roma – La rondine\n\nDirigent: Scuola
-  di Canto Corale\n\nBesetzung (Angaben der Produktion\; einzelne Termine k
- önnen abweichen):\nMagda\nErmonela Jaho\nErika Grimaldi\n19\, 22\nLisette
- \, la sua governante\nRosalia Cid\nRuggero\nFrancesco Meli\nIvan Magri\n19
- \, 22\nPrunier\, poeta\nMatteo Mezzaro\n\nEndzeit geschätzt (+3 h)\; bitt
- e offizielle Dauer prüfen.\n\nQuelle: https://www.operaroma.it/spettacoli
- /la-rondine/
+DESCRIPTION:Teatro dell’Opera di Roma – La rondine\n\nDirigent: France
+ sco Lanzillotta\n\nBesetzung: Bitte tagesaktuelle Besetzung auf der offizi
+ ellen Produktionsseite prüfen\; Alternativbesetzungen können je Aufführ
+ ung variieren.\n\nEndzeit geschätzt (+3 h)\; bitte offizielle Dauer prüf
+ en.\n\nQuelle: https://www.operaroma.it/spettacoli/la-rondine/
 LOCATION:Teatro Costanzi\, Piazza Beniamino Gigli 7\, Roma\, Italia
 URL:https://www.operaroma.it/spettacoli/la-rondine/
 END:VEVENT
