@@ -10,6 +10,7 @@ from __future__ import annotations
 import hashlib
 import logging
 import re
+import unicodedata
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
@@ -49,7 +50,7 @@ def fetch(session, url):
 
 
 def clean(s):
-    return re.sub(r'\s+', ' ', s or '').strip()
+    return unicodedata.normalize('NFC', re.sub(r'\s+', ' ', s or '').strip())
 
 
 def is_stage_opera_card(anchor):
@@ -149,9 +150,20 @@ def extract_events(lines, title, url, page_years=None):
                     break
             break
 
-    # Do not misattribute alternating singers to specific dates. The full,
-    # date-specific roster remains available through the source URL.
-    # Operaroma mixes day numbers and multiple artists within each cast row.
+    # The production-specific cast is useful, but the site uses mixed
+    # alternate-singer/day-number notation. Preserve the official credits
+    # *verbatim* rather than inventing date-specific assignments.
+    cast_lines = []
+    cast_start = next((i for i, t in enumerate(lines[:cut])
+                       if clean(t).casefold() in {'personaggi e interpreti', 'personaggi ed interpreti'}), None)
+    if cast_start is not None:
+        for t in lines[cast_start+1:cut]:
+            if re.search(r'^orchestra(?:\s|$)|^coro(?:\s|$)|^nuova produzione|^produzione(?:\s|$)', t, re.I):
+                break
+            if t and not re.match(r'^(?:Dove|Teatro Costanzi)$', t, re.I):
+                cast_lines.append(t)
+        # Cap to keep an Apple Calendar description manageable.
+        cast_lines = cast_lines[:32]
 
     section = lines[cut+1:]
     preview_at = next((i for i,t in enumerate(section) if 'anteprima giovani' in t.casefold()), len(section))
@@ -175,6 +187,14 @@ def extract_events(lines, title, url, page_years=None):
             start = datetime(year, month, int(day), int(hour), int(minute), tzinfo=TZ)
         except ValueError:
             continue
+        # Reject false year assignments: weekday must match the official date label.
+        weekday_text = date_text[match.start():match.end()].split()[0].casefold()
+        weekday_index = {'lunedì':0,'lunedi':0,'martedì':1,'martedi':1,
+                         'mercoledì':2,'mercoledi':2,'giovedì':3,'giovedi':3,
+                         'venerdì':4,'venerdi':4,'sabato':5,'domenica':6}
+        if weekday_index.get(weekday_text) != start.weekday():
+            logging.warning('Weekday/year mismatch for %s in %s; skipping', start, url)
+            continue
         if start.date() < datetime.now(TZ).date() - timedelta(days=45):
             continue
         key = start.isoformat()
@@ -184,7 +204,10 @@ def extract_events(lines, title, url, page_years=None):
         desc = [f'Teatro dell’Opera di Roma – {title}']
         if conductor:
             desc.append('Dirigent: ' + conductor)
-        desc.append('Besetzung: Bitte tagesaktuelle Besetzung auf der offiziellen Produktionsseite prüfen; Alternativbesetzungen können je Aufführung variieren.')
+        if cast_lines:
+            desc.append('Rollen und Besetzung laut Produktionsseite (mit dort angegebenen Alternativen; nicht auf diesen Termin gefiltert):\n' + '\n'.join(cast_lines))
+        else:
+            desc.append('Besetzung: siehe offizielle Produktionsseite; Änderungen möglich.')
         desc.extend(['Endzeit geschätzt (+3 h); bitte offizielle Dauer prüfen.',f'Quelle: {url}'])
         events.append((start, '\n\n'.join(desc)))
     return events
@@ -233,6 +256,8 @@ def main():
     now = datetime.now(timezone.utc)
     for title,start,description,url in sorted(records.values(),key=lambda x:x[1]):
         event = Event()
+        # Stable UID for recurring updates. A cast/description change must not
+        # duplicate the event in subscribed calendars.
         signature = hashlib.sha256(f'{title}|{start.isoformat()}'.encode()).hexdigest()[:24]
         event.add('uid',f'{signature}@opera-roma-calendar')
         event.add('dtstamp',now)
@@ -243,7 +268,10 @@ def main():
         event.add('description',description)
         event.add('url',url)
         cal.add_component(event)
-    OUT.write_bytes(cal.to_ical())
+    # Atomic output so interrupted workflow runs cannot corrupt the feed.
+    tmp = OUT.with_suffix('.ics.tmp')
+    tmp.write_bytes(cal.to_ical())
+    tmp.replace(OUT)
     logging.info('Wrote %s (%s events)',OUT,len(records))
 
 
