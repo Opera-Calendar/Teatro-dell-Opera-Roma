@@ -115,6 +115,92 @@ def year_for(lines):
     return None
 
 
+
+# Role headings occur as individual text items on most productions. Mapping
+# the advertised names avoids guessing where multi-word singer names end.
+# New roles can be added without changing dates or calendar identifiers.
+ROLE_HEADINGS = {
+    'andrea-chenier': ['Andrea Chénier', 'Carlo Gérard', 'Maddalena di Coigny', 'La mulatta Bersi',
+                      'La contessa di Coigny', 'Madelon', 'Roucher',
+                      'Il romanziero (Pietro Fléville) / Fouquier Tinville', 'Il sanculotto Mathieu',
+                      'Un “Incredibile”', 'L’abate'],
+    'lucia-di-lammermoor': ['Lord Enrico Ashton', 'Miss Lucia', 'Sir Edgardo di Ravenswood',
+                           'Lord Arturo Bucklaw', 'Raimondo Bidebent', 'Alisa', 'Normanno'],
+    'i-due-foscari': ['Francesco Foscari', 'Jacopo Foscari', 'Lucrezia Contarini', 'Jacopo Loredano',
+                     'Barbarigo', 'Pisana'],
+    'il-trovatore': ['Il conte di luna', 'Leonora', 'Azucena', 'Manrico', 'Ferrando', 'Ruiz'],
+    'la-rondine': ['Magda', 'Lisette, la sua governante', 'Ruggero', 'Prunier, poeta',
+                   'Rambaldo, protettore di Magda'],
+    'the-rakes-progress': ['Trulove', 'Anne, sua figlia', 'Tom Rakewell', 'Nick Shadow',
+                           'Mother Goose', 'Baba la turca', 'Sellem'],
+    'iphigenie-en-tauride': ['Iphigénie', 'Oreste', 'Pylade', 'Thoas'],
+    'una-lady-macbeth': ['Boris Timofeevič Izmailov', 'Zinovij Borisovič Izmailov',
+                        'Katerina L’vovna Izmajlova', 'Sergej', 'Un contadino cencioso',
+                        'Un prete', 'Un sergente di polizia', 'Aksin’ja',
+                        'Un vecchio forzato', 'Sonetka'],
+}
+
+
+def dated_cast(cast_lines, url, performance_date):
+    """Return lines for a given date; never invent a singer for ambiguous credits.
+
+    On the official site alternates are written e.g.
+    'Sonya Yoncheva / Angela Meade 19, 21, 24'. When the first singer
+    has no days, they sing the remaining days; if every singer has days,
+    we only match the explicit entries. Bare singleton performers apply
+    throughout the run. Unknown formatting is flagged rather than inferred.
+    """
+    slug = urlparse(url).path.lower()
+    names = next((v for k, v in ROLE_HEADINGS.items() if k in slug), None)
+    if not names:
+        return [], 'Rollenliste dieser Produktion noch nicht unterstützt.'
+    # The site sometimes misspells INTEPRETI and uses a mixture of HTML
+    # elements for the role, singer, and date annotations.
+    normalized = clean(' '.join(cast_lines))
+    pat = re.compile('|'.join(re.escape(r) for r in sorted(names, key=len, reverse=True)), re.I)
+    spans = list(pat.finditer(normalized))
+    if not spans:
+        return [], 'Rollen im offiziellen Besetzungstext nicht erkannt.'
+    output = []
+    uncertain = []
+    for j, match in enumerate(spans):
+        role = match.group(0)
+        text = normalized[match.end():spans[j+1].start() if j+1 < len(spans) else len(normalized)].strip(' /')
+        if not text:
+            uncertain.append(role)
+            continue
+        variants = [v.strip() for v in re.split(r'\s+/\s+', text) if v.strip()]
+        assignments = []
+        for variant in variants:
+            # Date annotations are trailing comma-separated day numbers.
+            m = re.search(r'\s+(\d{1,2}(?:\s*,\s*\d{1,2})*)\s*$', variant)
+            if m:
+                performer = variant[:m.start()].strip()
+                days = {int(x) for x in re.findall(r'\d{1,2}', m.group(1))}
+            else:
+                performer, days = variant.strip(), None
+            if performer:
+                assignments.append((performer, days))
+        if not assignments:
+            uncertain.append(role)
+            continue
+        day = performance_date.day
+        matched = [person for person, days in assignments if days is not None and day in days]
+        if len(matched) == 1:
+            output.append(f'{role} – {matched[0]}')
+        elif len(matched) > 1:
+            uncertain.append(role)
+        else:
+            defaults = [person for person, days in assignments if days is None]
+            if len(defaults) == 1:
+                output.append(f'{role} – {defaults[0]}')
+            else:
+                uncertain.append(role)
+    note = ('Nicht eindeutig zugeordnet: ' + ', '.join(uncertain) +
+            ' (siehe offizielle Besetzungsseite).') if uncertain else ''
+    return output, note
+
+
 def extract_events(lines, title, url, page_years=None):
     joined = ' '.join(lines)
     if not re.search(r'\bTeatro Costanzi\b', joined):
@@ -155,15 +241,15 @@ def extract_events(lines, title, url, page_years=None):
     # *verbatim* rather than inventing date-specific assignments.
     cast_lines = []
     cast_start = next((i for i, t in enumerate(lines[:cut])
-                       if clean(t).casefold() in {'personaggi e interpreti', 'personaggi ed interpreti'}), None)
+                       if clean(t).casefold() in {'personaggi e interpreti', 'personaggi ed interpreti', 'personaggi e intepreti'}), None)
     if cast_start is not None:
         for t in lines[cast_start+1:cut]:
-            if re.search(r'^orchestra(?:\s|$)|^coro(?:\s|$)|^nuova produzione|^produzione(?:\s|$)', t, re.I):
+            if re.search(r'^orchestra(?:\s|$)|^orchestra e coro|^coro(?:\s|$)|^nuova produzione|^produzione(?:\s|$)', t, re.I):
                 break
             if t and not re.match(r'^(?:Dove|Teatro Costanzi)$', t, re.I):
                 cast_lines.append(t)
         # Cap to keep an Apple Calendar description manageable.
-        cast_lines = cast_lines[:32]
+        cast_lines = cast_lines[:100]
 
     section = lines[cut+1:]
     preview_at = next((i for i,t in enumerate(section) if 'anteprima giovani' in t.casefold()), len(section))
@@ -205,7 +291,11 @@ def extract_events(lines, title, url, page_years=None):
         if conductor:
             desc.append('Dirigent: ' + conductor)
         if cast_lines:
-            desc.append('Rollen und Besetzung laut Produktionsseite (mit dort angegebenen Alternativen; nicht auf diesen Termin gefiltert):\n' + '\n'.join(cast_lines))
+            cast, cast_note = dated_cast(cast_lines, url, start.date())
+            if cast:
+                desc.append('Besetzung für diesen Aufführungstag (laut veröffentlichter Planung):\n' + '\n'.join(cast))
+            if cast_note:
+                desc.append(cast_note)
         else:
             desc.append('Besetzung: siehe offizielle Produktionsseite; Änderungen möglich.')
         desc.extend(['Endzeit geschätzt (+3 h); bitte offizielle Dauer prüfen.',f'Quelle: {url}'])
