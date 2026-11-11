@@ -96,14 +96,21 @@ def portion(soup):
 
 
 def year_for(lines):
-    joined = ' '.join(lines[:70])
-    match = re.search(r'Stagione\s+(20\d{2})\s*/\s*(20\d{2})', joined, re.I)
+    # The current site renders the season label after a lengthy navigation
+    # menu. Searching the first 70 strings discarded it, causing every
+    # 2026/27 production to fail with 'No season year'.
+    joined = ' '.join(lines)
+    match = re.search(r'Stagione\s+(20\d{2})\s*[/–-]\s*(20\d{2}|\d{2})(?!\d)', joined, re.I)
     if match:
-        return int(match.group(1)), int(match.group(2))
+        first, last = int(match.group(1)), int(match.group(2))
+        if last < 100:
+            last += (first // 100) * 100
+        if last == first + 1:
+            return first, last
     return None
 
 
-def extract_events(lines, title, url):
+def extract_events(lines, title, url, page_years=None):
     joined = ' '.join(lines)
     if not re.search(r'\bTeatro Costanzi\b', joined):
         return []
@@ -122,7 +129,7 @@ def extract_events(lines, title, url):
         logging.warning('Unknown genre, skipping %s', url)
         return []
 
-    years = year_for(lines)
+    years = year_for(lines) or page_years
     if not years:
         logging.warning('No season year: %s', url)
         return []
@@ -188,7 +195,8 @@ def get_production(session, url):
     title = clean(h1.get_text(' ',strip=True)) if h1 else ''
     if not title:
         return []
-    return [(title, when, desc, url) for when, desc in extract_events(lines,title,url)]
+    page_years = year_for([clean(x) for x in soup.stripped_strings])
+    return [(title, when, desc, url) for when, desc in extract_events(lines,title,url,page_years)]
 
 
 def main():
