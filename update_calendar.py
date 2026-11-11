@@ -45,7 +45,7 @@ SEED_URLS = [
 def fetch(session, url):
     response = session.get(url, timeout=35)
     response.raise_for_status()
-    return BeautifulSoup(response.text, 'html.parser')
+    return BeautifulSoup(response.content, 'html.parser')
 
 
 def clean(s):
@@ -87,6 +87,10 @@ def portion(soup):
     # Production data precedes the cross-selling section 'Ti può interessare'.
     main = soup.select_one('main') or soup.body or soup
     lines = [clean(x) for x in main.stripped_strings]
+    # Never read navigation labels (e.g. 'Scuola di Canto Corale') as cast/crew.
+    season_index = next((i for i, v in enumerate(lines) if re.search(r'^Stagione\s+20\d{2}', v, re.I)), None)
+    if season_index is not None:
+        lines = lines[season_index:]
     try:
         end = next(i for i, x in enumerate(lines) if 'Ti può interessare' in x)
         lines = lines[:end]
@@ -134,44 +138,41 @@ def extract_events(lines, title, url, page_years=None):
         logging.warning('No season year: %s', url)
         return []
     season_start, season_end = years
+    # The conductor is the person named immediately under 'Direttore' on
+    # the actual production page (the navigation has already been removed).
     conductor = ''
     for i, t in enumerate(lines[:cut]):
-        if t.lower() in {'direttore', 'direttore musicale', 'direzione musicale'} and i+1 < cut:
-            conductor = lines[i+1]
-            break
-    cast_lines = []
-    for i,t in enumerate(lines[:cut]):
-        if re.search(r'PERSONAGGI E INTERPRETI|PERSONAGGI E INTEPRETI|CAST|INTERPRETI', t, re.I):
-            for v in lines[i+1:min(cut,i+25)]:
-                if re.search(r'^Orchestra|^Produzione|^Nuova produzione|^Con sovratitoli|^Dove$', v, re.I):
+        if t.casefold() in {'direttore', 'direttore musicale', 'direzione musicale'}:
+            for candidate in lines[i+1:min(i+5,cut)]:
+                if candidate and candidate.casefold() not in {'regia', 'direttore', 'personaggi e interpreti'}:
+                    conductor = candidate
                     break
-                if len(v) >= 5:
-                    cast_lines.append(v)
             break
-    cast = '\n'.join(cast_lines[:12])
 
-    # Read the official list: "venerdì / 27 / Nov / ORE 19:00 Turno A".
-    # Preview performances are explicitly excluded.
+    # Do not misattribute alternating singers to specific dates. The full,
+    # date-specific roster remains available through the source URL.
+    # Operaroma mixes day numbers and multiple artists within each cast row.
+
     section = lines[cut+1:]
-    preview_at = next((i for i,t in enumerate(section) if 'Anteprima giovani' in t), len(section))
+    preview_at = next((i for i,t in enumerate(section) if 'anteprima giovani' in t.casefold()), len(section))
     section = section[:preview_at]
+    # Use pattern recognition on the flattened DATE SECTION rather than
+    # requiring individual HTML nodes at precise indices. The site's DOM
+    # fragments date labels differently across first nights and repeats.
+    date_text = ' '.join(section)
+    pattern = re.compile(
+        r'(?<!\w)(?:luned[iì]|marted[iì]|mercoled[iì]|gioved[iì]|venerd[iì]|sabato|domenica)'
+        r'\s+(\d{1,2})\s+'
+        r'(gennaio|febbraio|marzo|aprile|maggio|giugno|luglio|agosto|settembre|ottobre|novembre|dicembre|gen|feb|mar|apr|mag|giu|lug|ago|set|ott|nov|dic)\.?'
+        r'\s+(?:ORE\s*)?(\d{1,2}):(\d{2})\b', re.I)
     events = []
     seen = set()
-    for i,t in enumerate(section):
-        if t.casefold() not in WEEKDAYS:
-            continue
-        if i+3 >= len(section) or not re.fullmatch(r'\d{1,2}',section[i+1]):
-            continue
-        month = MONTHS.get(section[i+2].casefold().strip('.'))
-        if not month:
-            continue
-        time_match = re.search(r'(?:ORE\s*)?(\d{1,2}):(\d{2})', section[i+3], re.I)
-        if not time_match:
-            continue
+    for match in pattern.finditer(date_text):
+        day, monthname, hour, minute = match.groups()
+        month = MONTHS[monthname.casefold()]
         year = season_start if month >= 11 else season_end
-        # Opera Roma seasons start Nov and carry through Oct.
         try:
-            start = datetime(year, month, int(section[i+1]), int(time_match.group(1)), int(time_match.group(2)),tzinfo=TZ)
+            start = datetime(year, month, int(day), int(hour), int(minute), tzinfo=TZ)
         except ValueError:
             continue
         if start.date() < datetime.now(TZ).date() - timedelta(days=45):
@@ -181,8 +182,9 @@ def extract_events(lines, title, url, page_years=None):
             continue
         seen.add(key)
         desc = [f'Teatro dell’Opera di Roma – {title}']
-        if conductor: desc.append('Dirigent: '+conductor)
-        if cast: desc.append('Besetzung (Angaben der Produktion; einzelne Termine können abweichen):\n'+cast)
+        if conductor:
+            desc.append('Dirigent: ' + conductor)
+        desc.append('Besetzung: Bitte tagesaktuelle Besetzung auf der offiziellen Produktionsseite prüfen; Alternativbesetzungen können je Aufführung variieren.')
         desc.extend(['Endzeit geschätzt (+3 h); bitte offizielle Dauer prüfen.',f'Quelle: {url}'])
         events.append((start, '\n\n'.join(desc)))
     return events
@@ -215,6 +217,13 @@ def main():
             logging.warning('Failed to fetch %s: %s',url,e)
     if not records:
         raise SystemExit('No valid future performances found: keeping the previous ICS unchanged.')
+    if OUT.exists():
+        try:
+            old_count = OUT.read_bytes().count(b'BEGIN:VEVENT')
+            if old_count >= 10 and len(records) < old_count * 0.65:
+                raise SystemExit(f'Only {len(records)} events vs {old_count} previously; preserving existing calendar.')
+        except OSError:
+            pass
     cal = Calendar()
     cal.add('prodid','-//Opera Calendar//Opera di Roma Costanzi//EN')
     cal.add('version','2.0')
