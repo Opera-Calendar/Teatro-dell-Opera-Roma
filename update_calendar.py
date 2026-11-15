@@ -141,6 +141,30 @@ ROLE_HEADINGS = {
 }
 
 
+# These are PLANNING estimates, NOT confirmed durations for the 2026/27 productions.
+# Two works have historical durations from this same theater (different productions):
+# Andrea Chénier 2016/17 2h35, Il trovatore 2016/17 2h50.
+# All other work-specific estimates are approximate and can change with intervals.
+DURATION_ESTIMATES = {
+    'the-rakes-progress': 195,
+    'andrea-chenier': 155,
+    'lucia-di-lammermoor': 185,
+    'i-due-foscari': 160,
+    'iphigenie-en-tauride': 150,
+    'una-lady-macbeth': 210,
+    'il-trovatore': 170,
+    'la-rondine': 145,
+}
+
+def duration_minutes(url):
+    slug = urlparse(url).path.lower()
+    return next((minutes for name, minutes in DURATION_ESTIMATES.items() if name in slug), 180)
+
+def is_cast_heading(text):
+    # In particular, the Il trovatore page spells INTERPRETI as INTEPRETI.
+    label = re.sub(r'[^a-z]', '', clean(text).casefold())
+    return label.startswith('personaggie') and ('interpreti' in label or 'intepreti' in label)
+
 def dated_cast(cast_lines, url, performance_date):
     """Return lines for a given date; never invent a singer for ambiguous credits.
 
@@ -154,7 +178,7 @@ def dated_cast(cast_lines, url, performance_date):
     names = next((v for k, v in ROLE_HEADINGS.items() if k in slug), None)
     if not names:
         return [], 'Rollenliste dieser Produktion noch nicht unterstützt.'
-    # The site sometimes misspells INTEPRETI and uses a mixture of HTML
+    # The site sometimes misspells INTERPRETI and uses a mixture of HTML
     # elements for the role, singer, and date annotations.
     normalized = clean(' '.join(cast_lines))
     pat = re.compile('|'.join(re.escape(r) for r in sorted(names, key=len, reverse=True)), re.I)
@@ -236,12 +260,12 @@ def extract_events(lines, title, url, page_years=None):
                     break
             break
 
-    # The production-specific cast is useful, but the site uses mixed
-    # alternate-singer/day-number notation. Preserve the official credits
-    # *verbatim* rather than inventing date-specific assignments.
+    # Read the production cast, then match explicit alternate dates per role.
     cast_lines = []
     cast_start = next((i for i, t in enumerate(lines[:cut])
-                       if clean(t).casefold() in {'personaggi e interpreti', 'personaggi ed interpreti', 'personaggi e intepreti'}), None)
+                       if is_cast_heading(t)), None)
+    if cast_start is None:
+        logging.warning('Cast heading not found for %s', url)
     if cast_start is not None:
         for t in lines[cast_start+1:cut]:
             if re.search(r'^orchestra(?:\s|$)|^orchestra e coro|^coro(?:\s|$)|^nuova produzione|^produzione(?:\s|$)', t, re.I):
@@ -298,8 +322,10 @@ def extract_events(lines, title, url, page_years=None):
                 desc.append(cast_note)
         else:
             desc.append('Besetzung: siehe offizielle Produktionsseite; Änderungen möglich.')
-        desc.extend(['Endzeit geschätzt (+3 h); bitte offizielle Dauer prüfen.',f'Quelle: {url}'])
-        events.append((start, '\n\n'.join(desc)))
+        minutes = duration_minutes(url)
+        desc.extend([f'Endzeit: Schätzung (+{minutes//60} h {minutes%60:02d} min inklusive angenommener Pause; aktuelle Aufführungsdauer nicht bestätigt).',
+                     f'Quelle: {url}'])
+        events.append((start, '\n\n'.join(desc), minutes))
     return events
 
 
@@ -311,7 +337,7 @@ def get_production(session, url):
     if not title:
         return []
     page_years = year_for([clean(x) for x in soup.stripped_strings])
-    return [(title, when, desc, url) for when, desc in extract_events(lines,title,url,page_years)]
+    return [(title, when, desc, url, minutes) for when, desc, minutes in extract_events(lines,title,url,page_years)]
 
 
 def main():
@@ -324,8 +350,8 @@ def main():
         try:
             rows = get_production(session,url)
             logging.info('[%s/%s] %s: %s performances',index,len(productions),url,len(rows))
-            for title,start,desc,src in rows:
-                records[(title.casefold(),start)] = (title,start,desc,src)
+            for title,start,desc,src,minutes in rows:
+                records[(title.casefold(),start)] = (title,start,desc,src,minutes)
         except requests.RequestException as e:
             logging.warning('Failed to fetch %s: %s',url,e)
     if not records:
@@ -344,7 +370,7 @@ def main():
     cal.add('x-wr-calname','Opera di Roma – Teatro Costanzi (Opera only)')
     cal.add('x-wr-timezone','Europe/Rome')
     now = datetime.now(timezone.utc)
-    for title,start,description,url in sorted(records.values(),key=lambda x:x[1]):
+    for title,start,description,url,minutes in sorted(records.values(),key=lambda x:x[1]):
         event = Event()
         # Stable UID for recurring updates. A cast/description change must not
         # duplicate the event in subscribed calendars.
@@ -352,7 +378,7 @@ def main():
         event.add('uid',f'{signature}@opera-roma-calendar')
         event.add('dtstamp',now)
         event.add('dtstart',start)
-        event.add('dtend',start+timedelta(hours=3))
+        event.add('dtend',start+timedelta(minutes=minutes))
         event.add('summary',title)
         event.add('location',VENUE)
         event.add('description',description)
